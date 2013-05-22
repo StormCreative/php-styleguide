@@ -10,7 +10,7 @@ Consistency is key, a common formatting must be followed at all times. This is a
 ---
 
 ### Documenting Code
----
+----
 
 Documenting your code is a must, this is done through applying comments to relevent parts of your code. You should aim for your code to speak for itself, but 
 wherever you've had to do something a bit funky that you won't remember later, make an inline comment.

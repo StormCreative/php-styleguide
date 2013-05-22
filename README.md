@@ -1,4 +1,4 @@
-## Storm Creative Media in-house PHP Styleguide, along with general notes
+## Storm Creative Media in-house PHP Styleguide
 
 ---
 
@@ -56,3 +56,7 @@ With a real world example, the comment will look like the below with a real meth
          }
 </code>
 </pre>
+
+#### Inline comments
+
+

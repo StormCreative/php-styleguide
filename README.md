@@ -1,4 +1,4 @@
-# Storm Creative Media in-house PHP Styleguide, along with general notes
+## Storm Creative Media in-house PHP Styleguide, along with general notes
 
 ---
 

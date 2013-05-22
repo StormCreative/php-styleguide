@@ -159,9 +159,48 @@ The above is a good example as it explains why the developer is unsetting an ins
 
 ### Naming Conventions
 
+#### Variables, methods, functions
+
 Variables, methods and functions all follow the 'Snake' naming convention and *not* Camel Case.
 
-Camel Case
+An example of Camel Case is:
+
+<pre>
+    <code>
+        function thisIsCamelCase();
+    </code>
+</pre>
+
+However we use Snake, as it's easier to read and looks tidier - see for yourself:
+
+<pre>
+    <code>
+        function this_is_camel_case();
+    </code>
+</pre>
+
+### Classes
+
+Classes *must* start with a capital letter - and when instantiated a class you must refer to it with a capital letter.
+
+Below is expected and acceptable class definition: 
+
+<pre>
+    <code>
+        class Example extends Base_example {
+
+            public function example_method()
+            {
+
+            }
+
+        }
+
+        $example = new Example();
+    </code>
+</pre>
+
+
 
 
 

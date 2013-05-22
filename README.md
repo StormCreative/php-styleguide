@@ -17,9 +17,9 @@ wherever you've had to do something a bit funky that you won't remember later, m
 #### Documenting Methods
 
 We follow a PHPDoc Styleguide of PHP. When documenting your class methods/functions you will do so in the following manner:
-
+<pre>
 <code>
-    <pre>
+    
         /**
          *  Description
          *
@@ -29,12 +29,14 @@ We follow a PHPDoc Styleguide of PHP. When documenting your class methods/functi
          *
          *  @return return type
          */
-    </pre>
+    
 </code>
+</pre>
 
 With a real world example, the comment will look like the below with a real method:
+<pre>
 <code>
-    <pre>
+    
         /**
          *  This is an example method to illustrate the comments
          *
@@ -55,5 +57,6 @@ With a real world example, the comment will look like the below with a real meth
 
             return $output;
          }
-    </pre>
+    
 </code>
+</pre>

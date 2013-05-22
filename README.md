@@ -10,6 +10,7 @@ Consistency is key, a common formatting must be followed at all times. This is a
 ---
 
 ### Documenting Code
+---
 
 Documenting your code is a must, this is done through applying comments to relevent parts of your code. You should aim for your code to speak for itself, but 
 wherever you've had to do something a bit funky that you won't remember later, make an inline comment.
@@ -157,6 +158,7 @@ An example of acceptable inline comments:
 The above is a good example as it explains why the developer is unsetting an instance - as it is not immediately clear why you would do something like this ( this is only an example ) so it warrants an explanation.
 
 ### Naming Conventions
+---
 
 #### Variables, methods, functions
 
@@ -200,6 +202,7 @@ Below is expected and acceptable class definition:
 </pre>
 
 ### Code Structure
+---
 
 #### Braces
 
@@ -285,7 +288,7 @@ The below is an example of bad practise when returning
     </code>
 </pre>
 
-With the above example you don't know whether your coming and going - and becomes an ache to maintain.
+With the above example you don't know whether your coming or going - and becomes an ache to maintain.
 
 Instead you will follow an example like:
 

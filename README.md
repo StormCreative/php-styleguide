@@ -179,7 +179,7 @@ However we use Snake, as it's easier to read and looks tidier - see for yourself
     </code>
 </pre>
 
-### Classes
+#### Classes
 
 Classes must start with a capital letter - and when instantiated a class you must refer to it with a capital letter. This keeps the code base tidy and formal.
 
@@ -200,7 +200,36 @@ Below is expected and acceptable class definition:
     </code>
 </pre>
 
+### Code Structure
 
+#### Parentheses
+
+The position of parentheses vary between whether they are wrapping a class, method or statements.
+
+The below class demonstrates how all types of parentheses will be used. Take note of how a Class uses the braces, the methods, and the statements within a method. This is how they should be used anywhere within a code base:
+
+<pre>
+    <code>
+        class Example extends Base_example {
+
+            public function example_method()
+            {
+                $array = array( 1,2,3 );
+
+                if( $something == true ) {
+                    foreach( $array as $item ) {
+                        $string .= $item;
+                    }
+                }
+
+                return $string;
+            }
+
+        }
+    </code>
+</pre>
+
+As you will notice, when using an IF or a Foreach or anything other than a Class or Method, the curly braces go after *not* underneath.
 
 
 

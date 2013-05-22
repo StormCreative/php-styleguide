@@ -110,6 +110,55 @@ To make the structure tidy you will document these types of settings like below:
 Only use inline comments when something warrants an explanation, if the code used a crazy technique that only you would ever understand
 then use inline comment. However, only use these when it's absolutely neccessary, do not bombard your code with them.
 
+An example of BAD inline comments:
+
+<pre>
+    <code>
+        function example()
+        {
+            // This variable is defaulted
+            $default = true;
+
+            // Checking whether default is true
+            if( $default ) {
+                // Set the name to be a new name
+                $name = 'A new name';
+            } else {
+                // Otherwise we set the name differently
+                $name = 'Different name';
+            }
+
+            // return the new name
+            return $name;
+        }
+    </code>
+</pre>
+
+The reason the above is a bad example is becaused the comments get in the way of the code - code should speak for itself.
+
+An example of acceptable inline comments:
+
+<pre>
+    <code>
+        function example( $array )
+        {
+            for( $i=0; $i<=count($array); $i++ ) {
+
+                if( $i==1 ) {
+                    // Unset previous instance as no longer needed to match
+                    unset( $i-1 );
+                    $array[$i] = 'doing something';
+                }
+            }
+            return $array;
+        }
+    </code>
+</pre>
+
+The above is a good example as it explains why the developer is unsetting an instance - as it is not immediately clear why you would do something like this ( this is only an example ) so you would explain it.
+
+
+
 
 
 

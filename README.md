@@ -142,9 +142,13 @@ An example of acceptable inline comments:
     <code>
         function example( $array )
         {
-            for( $i=0; $i<=count($array); $i++ ) {
+            for( $i=0; $i <= count($array); $i++ ) {
 
-                
+                if( $i==1 ) {
+                    // Unset previous instance as no longer needed to match
+                    unset( $i-1 );
+                    $array[$i] = 'doing something';
+                }
             }
             return $array;
         }

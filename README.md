@@ -48,7 +48,7 @@ With a real world example, the comment will look like the below with a real meth
          *  @access protected
          *
          *  @param string $name
-         *  @param optional string $name
+         *  @param optional string $email
          *  @return bool
          */
          protected function example_method( $name, $email="" )
@@ -143,7 +143,6 @@ An example of acceptable inline comments:
         function example( $array )
         {
             for( $i=0; $i=count($array); $i++ ) {
-
                 if( $i==1 ) {
                     // Unset previous instance as no longer needed to match
                     unset( $i-1 );
@@ -202,11 +201,11 @@ Below is expected and acceptable class definition:
 
 ### Code Structure
 
-#### Parentheses
+#### Braces
 
-The position of parentheses vary between whether they are wrapping a class, method or statements.
+The position of braces vary between whether they are wrapping a class, method or statements.
 
-The below class demonstrates how all types of parentheses will be used. Take note of how a Class uses the braces, the methods, and the statements within a method. This is how they should be used anywhere within a code base:
+The below class demonstrates how all types of braces will be used. Take note of how a Class uses the braces, the methods, and the statements within a method. This is how they should be used anywhere within a code base:
 
 <pre>
     <code>
@@ -230,6 +229,29 @@ The below class demonstrates how all types of parentheses will be used. Take not
 </pre>
 
 As you will notice, when using an IF or a Foreach or anything other than a Class or Method, the curly braces go after *not* underneath.
+
+#### Parentheses and spacing
+
+A function/methods parentheses will follow immediately after the name, no spacing - the only spacing acceptable is within the parentheses themselves.
+
+Taking the example from above - this is how paranetheses are allowed to be arranged:
+
+<pre>
+    <code>
+        public function example_method()
+        {
+            $array = array( 1,2,3 );
+
+            if( $something == true ) {
+                foreach( $array as $item ) {
+                    $string .= $item;
+                }
+            }
+
+            return $string;
+        }
+    </code>
+</pre>
 
 
 

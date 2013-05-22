@@ -253,6 +253,64 @@ Taking the example from above - this is how paranetheses are allowed to be arran
     </code>
 </pre>
 
+#### Scoping
+
+A function/method should serve one purpose - if the scope of that method/function extends one purpose create a new function. This prevents a function/method losing it's original scope
+and also makes Unit Tests easier, as you are testing for one thing.
+
+#### Returns
+
+A method/function should only ever have *one* exit point - by this you should only end the function with a return *once*. 
+
+Instead of setting up multiple returns, just mutate a variable on different conditions and return the variable.
+
+The below is an example of bad practise when returning
+
+<pre>
+    <code>
+        function example_function( $one, $two )
+        {
+            if( !isset( $one ) && !isset( $two ) ) {
+                return true;
+            }
+
+            $sum = $one + $two;
+
+            if( $sum > 0 ) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </code>
+</pre>
+
+With the above example you don't know whether your coming and going - and becomes an ache to maintain.
+
+Instead you will follow an example like:
+
+<pre>
+    <code>
+        function example_function( $one, $two )
+        {
+            if( !isset( $one ) && !isset( $two ) ) {
+                $output = false;
+            }
+
+            $sum = $one + $two;
+
+            if( $sum > 0 ) {
+                $output = true;
+            } else {
+                $output = false;
+            }
+
+            return $output;
+        }
+    </code>
+</pre>
+
+
 
 
 

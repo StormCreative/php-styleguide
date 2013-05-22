@@ -181,7 +181,7 @@ However we use Snake, as it's easier to read and looks tidier - see for yourself
 
 ### Classes
 
-Classes *must* start with a capital letter - and when instantiated a class you must refer to it with a capital letter.
+Classes must start with a capital letter - and when instantiated a class you must refer to it with a capital letter. This keeps the code base tidy and formal.
 
 Below is expected and acceptable class definition: 
 
@@ -199,6 +199,8 @@ Below is expected and acceptable class definition:
         $example = new Example();
     </code>
 </pre>
+
+
 
 
 

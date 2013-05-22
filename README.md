@@ -144,11 +144,7 @@ An example of acceptable inline comments:
         {
             for( $i=0; $i<=count($array); $i++ ) {
 
-                if( $i==1 ) {
-                    // Unset previous instance as no longer needed to match
-                    unset( $i-1 );
-                    $array[$i] = 'doing something';
-                }
+                
             }
             return $array;
         }
@@ -159,7 +155,9 @@ The above is a good example as it explains why the developer is unsetting an ins
 
 ### Naming Conventions
 
+Variables, methods and functions all follow the 'Snake' naming convention and *not* Camel Case.
 
+Camel Case
 
 
 

@@ -186,7 +186,8 @@ Below is expected and acceptable class definition:
 
 <pre>
     <code>
-        class Example extends Base_example {
+        class Example extends Base_example 
+        {
 
             public function example_method()
             {
@@ -206,11 +207,12 @@ Below is expected and acceptable class definition:
 
 The position of braces vary between whether they are wrapping a class, method or statements.
 
-The below class demonstrates how all types of braces will be used. Take note of how a Class uses the braces, the methods, and the statements within a method. This is how they should be used anywhere within a code base:
+The below class demonstrates how all types of braces will be used. Take note of how a Class uses the braces, the methods, and the constrol structures within a method. This is how they should be used anywhere within a code base:
 
 <pre>
     <code>
-        class Example extends Base_example {
+        class Example extends Base_example 
+        {
 
             public function example_method()
             {
@@ -229,7 +231,7 @@ The below class demonstrates how all types of braces will be used. Take note of 
     </code>
 </pre>
 
-As you will notice, when using an IF or a Foreach or anything other than a Class or Method, the curly braces go after *not* underneath.
+As you will notice, control structures or anything other than a Class or Method, the curly braces go after *not* underneath.
 
 #### Parentheses and spacing
 

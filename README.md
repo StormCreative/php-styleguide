@@ -155,7 +155,9 @@ An example of acceptable inline comments:
     </code>
 </pre>
 
-The above is a good example as it explains why the developer is unsetting an instance - as it is not immediately clear why you would do something like this ( this is only an example ) so you would explain it.
+The above is a good example as it explains why the developer is unsetting an instance - as it is not immediately clear why you would do something like this ( this is only an example ) so it warrants an explanation.
+
+### Naming Conventions
 
 
 

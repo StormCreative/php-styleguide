@@ -62,7 +62,8 @@ With a real world example, the comment will look like the below with a real meth
 #### Documenting Class Properties
 To make it clear what a classes properties are used for - it's useful to document them. The style of documenting a property is as such:
 
-```php        /**
+```php        
+        /**
          * This holds the users name
          *
          * @var string

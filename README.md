@@ -39,8 +39,7 @@ We follow a PHPDoc Styleguide of PHP. When documenting your class methods/functi
 </pre>
 
 With a real world example, the comment will look like the below with a real method:
-<pre>
-<code>
+```php
         /**
          *  This is an example method to illustrate the comments
          *
@@ -60,8 +59,7 @@ With a real world example, the comment will look like the below with a real meth
 
             return $output;
          }
-</code>
-</pre>
+```
 
 #### Documenting Class Properties
 To make it clear what a classes properties are used for - it's useful to document them. The style of documenting a property is as such:

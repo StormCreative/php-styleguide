@@ -12,6 +12,14 @@ Consistency is key, a common formatting must be followed at all times. This is a
     * [Class Properties](#documenting-class-properties)
     * [System Settings](#commenting-system-settings)
     * [Inline Comments](#inline-comments)
+* [Naming Conventions](#naming-conventions)
+    * [Variables, Methods, functions](#variables-methods-functions)
+    * [Classes](#classes)
+* [Code Structure](#code-structure)
+    * [Braces](#braces)
+    * [Parentheses and spacing](#parentheses-and-spacing)
+    * [Scroping](#scoping)
+    * [Returns](#returns)
 
 ---
 

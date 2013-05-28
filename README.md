@@ -8,8 +8,10 @@ Consistency is key, a common formatting must be followed at all times. This is a
 ## Contents
 
 * [Documenting Code](#documenting-code)
-    * [Methods](#methods)
-    * [Class Properties](#class-properties)
+    * [Methods](#documenting-methods)
+    * [Class Properties](#documenting-class-properties)
+    * [System Settings](#commenting-system-settings)
+    * [Inline Comments](#inline-comments)
 
 ---
 

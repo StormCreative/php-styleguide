@@ -25,8 +25,7 @@ When documenting any arguments, properties type you will need to state any of th
 #### Documenting Methods
 
 We follow a PHPDoc Styleguide of PHP. When documenting your class methods/functions you will do so in the following manner:
-<pre>
-<code>
+```php
         /**
          *  Description
          *
@@ -35,8 +34,7 @@ We follow a PHPDoc Styleguide of PHP. When documenting your class methods/functi
          *  @param parameter type
          *  @return return type
          */
-</code>
-</pre>
+```
 
 With a real world example, the comment will look like the below with a real method:
 ```php
@@ -64,24 +62,20 @@ With a real world example, the comment will look like the below with a real meth
 #### Documenting Class Properties
 To make it clear what a classes properties are used for - it's useful to document them. The style of documenting a property is as such:
 
-<pre>
-    <code>
-        /**
+```php        /**
          * This holds the users name
          *
          * @var string
          */
          public $name;
-    </code>
-</pre>
+```
 
 
 #### Commenting System Settings
 If you make a change to a Frameworks structure or are writing your own appliction you'll find you need document a file some settings or constants, global variables.
 To make the structure tidy you will document these types of settings like below:
 
-<pre>
-    <code>
+```php
         /*
         |----------------------------------------------------------------
         | Application Global Settings
@@ -99,8 +93,7 @@ To make the structure tidy you will document these types of settings like below:
         //---------------------------------------------------------------
         $site = '/example/';
 
-    </code>
-</pre>
+```
 
 #### Inline comments
 
@@ -109,8 +102,7 @@ then use inline comment. However, only use these when it's absolutely neccessary
 
 An example of BAD inline comments:
 
-<pre>
-    <code>
+```php
         function example()
         {
             // This variable is defaulted
@@ -128,15 +120,13 @@ An example of BAD inline comments:
             // return the new name
             return $name;
         }
-    </code>
-</pre>
+```
 
 The reason the above is a bad example is becaused the comments get in the way of the code - code should speak for itself.
 
 An example of acceptable inline comments:
 
-<pre>
-    <code>
+```php
         function example( $array )
         {
             for( $i=0; $i=count($array); $i++ ) {
@@ -148,8 +138,7 @@ An example of acceptable inline comments:
             }
             return $array;
         }
-    </code>
-</pre>
+```
 
 The above is a good example as it explains why the developer is unsetting an instance - as it is not immediately clear why you would do something like this ( this is only an example ) so it warrants an explanation.
 
@@ -162,19 +151,15 @@ Variables, methods and functions all follow the 'Snake' naming convention and *n
 
 An example of Camel Case is:
 
-<pre>
-    <code>
+```php
         function thisIsCamelCase();
-    </code>
-</pre>
+```
 
 However we use Snake, as it's easier to read and looks tidier - see for yourself:
 
-<pre>
-    <code>
+```php
         function this_is_camel_case();
-    </code>
-</pre>
+```
 
 #### Classes
 
@@ -182,8 +167,7 @@ Classes must start with a capital letter - and when instantiated a class you mus
 
 Below is expected and acceptable class definition: 
 
-<pre>
-    <code>
+```php
         class Example extends Base_example 
         {
 
@@ -195,8 +179,7 @@ Below is expected and acceptable class definition:
         }
 
         $example = new Example();
-    </code>
-</pre>
+```
 
 ### Code Structure
 ---
@@ -207,8 +190,7 @@ The position of braces vary between whether they are wrapping a class, method or
 
 The below class demonstrates how all types of braces will be used. Take note of how a Class uses the braces, the methods, and the constrol structures within a method. This is how they should be used anywhere within a code base:
 
-<pre>
-    <code>
+```php
         class Example extends Base_example 
         {
 
@@ -226,8 +208,7 @@ The below class demonstrates how all types of braces will be used. Take note of 
             }
 
         }
-    </code>
-</pre>
+```
 
 As you will notice, control structures or anything other than a Class or Method, the curly braces go after *not* underneath.
 
@@ -237,8 +218,7 @@ A function/methods parentheses will follow immediately after the name, no spacin
 
 Taking the example from above - this is how paranetheses are allowed to be arranged:
 
-<pre>
-    <code>
+```php
         public function example_method()
         {
             $array = array( 1,2,3 );
@@ -251,8 +231,7 @@ Taking the example from above - this is how paranetheses are allowed to be arran
 
             return $string;
         }
-    </code>
-</pre>
+```
 
 #### Scoping
 
@@ -267,8 +246,7 @@ Instead of setting up multiple returns, just mutate a variable on different cond
 
 The below is an example of bad practise when returning
 
-<pre>
-    <code>
+```php
         function example_function( $one, $two )
         {
             if( !isset( $one ) && !isset( $two ) ) {
@@ -283,15 +261,13 @@ The below is an example of bad practise when returning
                 return false;
             }
         }
-    </code>
-</pre>
+```
 
 With the above example you don't know whether your coming or going - and becomes an ache to maintain.
 
 Instead you will follow an example like:
 
-<pre>
-    <code>
+```php
         function example_function( $one, $two )
         {
             if( !isset( $one ) && !isset( $two ) ) {
@@ -308,8 +284,7 @@ Instead you will follow an example like:
 
             return $output;
         }
-    </code>
-</pre>
+```
 
 
 

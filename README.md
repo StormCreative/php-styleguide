@@ -5,6 +5,12 @@ the techniques and preferred practise by Storm Creative development team.
 
 Consistency is key, a common formatting must be followed at all times. This is achieved through consistent syntax, commenting and naming conventions.
 
+## Contents
+
+* [Documenting Code](#documenting-code)
+    * [Methods](#methods)
+    * [Class Properties](#class-properties)
+
 ---
 
 ### Documenting Code

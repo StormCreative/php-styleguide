@@ -146,10 +146,10 @@ An example of acceptable inline comments:
 ```php
         function example($array)
         {
-            for( $i=0; $i=count($array); $i++ ) {
-                if( $i==1 ) {
+            for ($i=0; $i=count($array); $i++) {
+                if ($i==1) {
                     // Unset previous instance as no longer needed to match
-                    unset( $i-1 );
+                    unset($i-1);
                     $array[$i] = 'doing something';
                 }
             }

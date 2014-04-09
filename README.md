@@ -63,11 +63,11 @@ With a real world example, the comment will look like the below with a real meth
          *  @param optional string $email
          *  @return bool
          */
-         protected function example_method( $name, $email="" )
+         protected function example_method($name, $email="")
          {
             $output = false;
 
-            if( $name == $email ) {
+            if ($name == $email) {
                 $output = true;
             }
 
@@ -126,7 +126,7 @@ An example of BAD inline comments:
             $default = true;
 
             // Checking whether default is true
-            if( $default ) {
+            if ($default) {
                 // Set the name to be a new name
                 $name = 'A new name';
             } else {
@@ -144,7 +144,7 @@ The reason the above is a bad example is becaused the comments get in the way of
 An example of acceptable inline comments:
 
 ```php
-        function example( $array )
+        function example($array)
         {
             for( $i=0; $i=count($array); $i++ ) {
                 if( $i==1 ) {
@@ -213,10 +213,10 @@ The below class demonstrates how all types of braces will be used. Take note of 
 
             public function example_method()
             {
-                $array = array( 1,2,3 );
+                $array = array(1, 2, 3);
 
-                if( $something == true ) {
-                    foreach( $array as $item ) {
+                if ($something == true) {
+                    foreach ($array as $item) {
                         $string .= $item;
                     }
                 }
@@ -231,17 +231,19 @@ As you will notice, control structures or anything other than a Class or Method,
 
 #### Parentheses and spacing
 
-A function/methods parentheses will follow immediately after the name, no spacing - the only spacing acceptable is within the parentheses themselves.
+A function/methods parentheses will not have a space after it - within the parentheses there will be no spaces at the start or end of the parentheses.
+
+HOWEVER, for a conditional, foreach, for, while etc. there will be a space after before the parentheses are (see below) - with no spaces at the start or end of the parentheses.
 
 Taking the example from above - this is how paranetheses are allowed to be arranged:
 
 ```php
         public function example_method()
         {
-            $array = array( 1,2,3 );
+            $array = array(1, 2, 3);
 
-            if( $something == true ) {
-                foreach( $array as $item ) {
+            if ($something == true) {
+                foreach ($array as $item) {
                     $string .= $item;
                 }
             }
@@ -264,15 +266,15 @@ Instead of setting up multiple returns, just mutate a variable on different cond
 The below is an example of bad practise when returning
 
 ```php
-        function example_function( $one, $two )
+        function example_function($one, $two)
         {
-            if( !isset( $one ) && !isset( $two ) ) {
+            if (!isset($one) && !isset($two)) {
                 return true;
             }
 
             $sum = $one + $two;
 
-            if( $sum > 0 ) {
+            if ($sum > 0) {
                 return true;
             } else {
                 return false;
@@ -287,13 +289,13 @@ Instead you will follow an example like:
 ```php
         function example_function( $one, $two )
         {
-            if( !isset( $one ) && !isset( $two ) ) {
+            if (!isset($one) && !isset($two)) {
                 $output = false;
             }
 
             $sum = $one + $two;
 
-            if( $sum > 0 ) {
+            if ($sum > 0) {
                 $output = true;
             } else {
                 $output = false;
